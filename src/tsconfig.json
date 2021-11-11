@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "ES2021.String"
-    ],
+    "lib": ["ES2021.String"],
     "declaration": true,
     "esModuleInterop": true,
     "inlineSourceMap": true,
@@ -14,10 +12,6 @@
     "strictNullChecks": true,
     "target": "es5"
   },
-  "include": [
-    "./**/*.ts"
-  ],
-  "exclude": [
-    "./**/*.spec.ts"
-  ]
+  "include": ["./**/*.ts"],
+  "exclude": ["./**/*.spec.ts"]
 }

@@ -1,4 +1,4 @@
-declare module 'string.prototype.replaceall' {
+declare module "string.prototype.replaceall" {
   namespace replaceAll {
     const shim: () => void;
   }
