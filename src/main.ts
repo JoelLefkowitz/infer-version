@@ -1,8 +1,10 @@
-import fs from 'fs';
-import matchAll  from 'string.prototype.matchall';
-import path from 'path';
+/// <reference path="./main.d.ts" />
 
-matchAll.shim();
+import fs from 'fs';
+import path from 'path';
+import replaceAll from 'string.prototype.replaceall';
+
+replaceAll.shim();
 
 export type Maybe<T> = T | null;
 
