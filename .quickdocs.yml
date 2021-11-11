@@ -1,0 +1,6 @@
+project: infer-version
+version: 0.1.0
+author: joellefkowitz
+verbose_name: infer-version
+html_title: infer-version
+github_url: https://github.com/joellefkowitz/infer-version

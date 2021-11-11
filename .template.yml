@@ -1,0 +1,14 @@
+output: .
+
+collections:
+  - common
+  - typescript
+
+excludes:
+  - .cspell.json
+
+render_context:
+  name: infer-version
+  description: Infer a project's version from its configuration files.
+  author: joellefkowitz
+  codacy_id: 0bf54bb20a744bec9c3d36ac206a0f3d
