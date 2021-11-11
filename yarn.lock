@@ -556,6 +556,11 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
+"@types/string.prototype.matchall@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/string.prototype.matchall/-/string.prototype.matchall-4.0.0.tgz#cd00ed3b223d02c8bf978d2866f54fd0e68026cd"
+  integrity sha512-PAspRKHfv4D2TDX4PPHzJ/IxI29ahUyQsTIyFl2/keG+C+mk0Gx3ksYNYRC1AWMmtbbjDeC/LTKOtkEB3ETJOA==
+
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
