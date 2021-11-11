@@ -1,5 +1,7 @@
 {
-  "extends": ["eslint:recommended"],
+  "extends": [
+    "eslint:recommended"
+  ],
   "env": {
     "node": true,
     "mocha": true
@@ -7,9 +9,14 @@
   "parserOptions": {
     "ecmaVersion": 9
   },
+  "ignorePatterns": [
+    "tests/fixtures"
+  ],
   "overrides": [
     {
-      "files": ["**/*.ts"],
+      "files": [
+        "**/*.ts"
+      ],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
