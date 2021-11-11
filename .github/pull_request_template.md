@@ -1,8 +1,3 @@
----
-name: "General pull request"
-about: Submit a pull request
----
-
 # PR Checklist
 
 Please check if your PR fulfills the following requirements:
