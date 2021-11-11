@@ -63,8 +63,9 @@ const tsc = {
 };
 
 const tests = {
-  mocha: `npx nyc mocha 'dist/**/*.js'
-          -R mochawesome --reporter-options reportDir=.mocha`,
+  mocha:
+    "npx nyc mocha 'dist/**/*.js' " +
+    '-R mochawesome --reporter-options reportDir=.mocha',
   renameCoverage: 'mv coverage/cobertura-coverage.xml coverage/cobertura.xml',
 };
 
