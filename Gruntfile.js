@@ -68,8 +68,6 @@ const tests = {
   renameCoverage: 'mv coverage/cobertura-coverage.xml coverage/cobertura.xml',
 };
 
-console.log(tests.mocha);
-
 const exec = merge(linters, formatters, tsc, tests);
 
 module.exports = simple({ clean, copy, exec }, tasks);
