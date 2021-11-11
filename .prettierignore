@@ -1,0 +1,4 @@
+.mocha
+.nyc_output
+dist
+tests/fixtures
