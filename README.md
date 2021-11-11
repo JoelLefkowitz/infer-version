@@ -106,8 +106,8 @@ Lots of love to the open source community!
 
 [readthedocs_shield]: https://img.shields.io/readthedocs/infer-version
 [github_review_shield]: https://img.shields.io/github/workflow/status/JoelLefkowitz/infer-version/Review
-[codacy_shield]: https://img.shields.io/codacy/grade/0bf54bb20a744bec9c3d36ac206a0f3d
-[codacy_coverage_shield]: https://img.shields.io/codacy/coverage/0bf54bb20a744bec9c3d36ac206a0f3d
+[codacy_shield]: https://img.shields.io/codacy/grade/cb2202d9612c4d5580024f4786a53723
+[codacy_coverage_shield]: https://img.shields.io/codacy/coverage/cb2202d9612c4d5580024f4786a53723
 
 <!-- Publishers shields -->
 
