@@ -69,6 +69,10 @@ const tests = {
   renameCoverage: 'mv coverage/cobertura-coverage.xml coverage/cobertura.xml',
 };
 
-const exec = merge(linters, formatters, tsc, tests);
+const docs = {
+  quickdocs: 'quickdocs .quickdocs.yml',
+};
+
+const exec = merge(linters, formatters, tsc, tests, docs);
 
 module.exports = simple({ clean, copy, exec }, tasks);
