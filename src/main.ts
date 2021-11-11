@@ -12,19 +12,22 @@ export const strip = (arr: string[], str: Maybe<string>) =>
 export const pick = (path: string, regex: RegExp): Maybe<string> =>
   fs.readFileSync(path, 'utf8').toString().match(regex)?.pop() ?? null;
 
-export const parseBumpversion = (root: string): Maybe<string> =>
-  strip(
+export function parseBumpversion(root: string): Maybe<string> {
+  const source = path.resolve(root, '.bumpversion.cfg');
+  if (!fs.existsSync(source)) {
+    return null;
+  }
+
+  return strip(
     ['current_version', '=', ' '],
-    pick(
-      path.resolve(root, '.bumpversion.cfg'),
-      new RegExp(/^current_version.*$/gm)
-    )
+    pick(source, new RegExp(/^current_version.*$/gm))
   );
+}
 
 export function parsePackage(root: string): Maybe<string> {
   try {
     const source = path.resolve(root, 'package.json');
-    return JSON.parse(fs.readFileSync(source, 'utf8'))?.version;
+    return JSON.parse(fs.readFileSync(source, 'utf8'))?.version ?? null;
   } catch (error) {
     return null;
   }

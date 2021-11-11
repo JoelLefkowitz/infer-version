@@ -44,6 +44,8 @@ describe('version', () => {
     expect(version(valid)).to.equal('0.2.0');
   });
   it('raises an exception if no version number can be found.', () => {
-    expect(version('_')).to.throw();
+    expect(() => version('_')).to.throw(
+      'Could not determine the version of the project at _'
+    );
   });
 });
