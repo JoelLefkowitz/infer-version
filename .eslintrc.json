@@ -7,7 +7,6 @@
   "parserOptions": {
     "ecmaVersion": 9
   },
-  "ignorePatterns": ["tests/fixtures"],
   "overrides": [
     {
       "files": ["**/*.ts"],
