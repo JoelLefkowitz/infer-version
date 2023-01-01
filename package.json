@@ -48,6 +48,7 @@
   },
   "metadata": {
     "documentation": "https://infer-version.readthedocs.io/en/latest",
+    "packages": "https://npmjs.com/package/infer-version",
     "languages": [
       "TypeScript"
     ],
