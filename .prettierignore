@@ -1,4 +1,3 @@
-.mocha
-.nyc_output
-dist
-tests/fixtures
+coverage
+samples/invalid
+venv

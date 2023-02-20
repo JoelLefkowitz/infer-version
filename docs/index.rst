@@ -1,7 +1,7 @@
-infer-version
+Infer version
 ============
 
-Welcome to infer-version's documentation!
+Welcome to Infer version's documentation!
 
 .. raw:: html
    :file: README.html

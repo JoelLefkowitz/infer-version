@@ -9,8 +9,8 @@ sys.path.append("..")
     Sphinx core settings
 """
 project = "infer-version"
-version = "0.2.0"
-author = "joellefkowitz"
+version = "0.1.0"
+author = "Joel Lefkowitz"
 master_doc = "index"
 
 extensions = [
@@ -21,7 +21,7 @@ extensions = [
     "sphinxcontrib.apidoc",
 ]
 
-html_title = "infer-version"
+html_title = "Infer version"
 html_favicon = "static/favicon.ico"
 
 html_static_path = ["static"]

@@ -1,53 +1,42 @@
 {
   "name": "infer-version",
-  "version": "0.2.0",
   "description": "Infer a project's version from its configuration files.",
-  "repository": "https://github.com/JoelLefkowitz/infer-version.git",
-  "author": "joellefkowitz",
+  "version": "0.2.0",
+  "repository": "https://github.com/joellefkowitz/infer-version",
+  "homepage": "https://infer-version.readthedocs.io",
+  "author": "Joel Lefkowitz",
   "license": "MIT",
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
-  "keywords": [
-    "version"
+  "main": "dist/index.js",
+  "files": [
+    "dist"
   ],
   "scripts": {
-    "prepublish": "grunt build"
-  },
-  "devDependencies": {
-    "@istanbuljs/nyc-config-typescript": "^1.0.1",
-    "@types/chai": "^4.2.21",
-    "@types/mocha": "^8.2.3",
-    "@types/node": "^16.4.10",
-    "@typescript-eslint/eslint-plugin": "^4.28.3",
-    "@typescript-eslint/parser": "^4.28.3",
-    "chai": "^4.3.4",
-    "cspell": "^5.6.6",
-    "eslint": "^7.30.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-watch": "^7.0.0",
-    "grunt": "^1.4.1",
-    "grunt-cli": "^1.4.3",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-exec": "^3.0.0",
-    "mocha": "^9.0.2",
-    "mocha-param": "^2.0.1",
-    "mochawesome": "^7.0.1",
-    "nyc": "^15.1.0",
-    "prettier": "^2.3.2",
-    "quick-grunt": "^0.2.0",
-    "remark-cli": "^9.0.0",
-    "remark-lint": "^8.0.0",
-    "remark-preset-lint-recommended": "^5.0.0",
-    "source-map-support": "^0.5.19",
-    "typescript": "^4.3.5"
+    "prepare": "husky install"
   },
   "dependencies": {
     "string.prototype.replaceall": "^1.0.6"
   },
+  "devDependencies": {
+    "@types/jest": "28.1.1",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.36.1",
+    "cspell": "^6.26.3",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint": "~8.34.0",
+    "husky": "^8.0.3",
+    "jest": "28.1.1",
+    "nps-utils": "^1.7.0",
+    "nps": "^5.10.0",
+    "prettier": "^2.6.2",
+    "ts-jest": "28.0.5",
+    "ts-node": "10.9.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.8.4"
+  },
   "metadata": {
-    "documentation": "https://infer-version.readthedocs.io/en/latest",
+    "documentation": "https://infer-version.readthedocs.io",
     "packages": "https://npmjs.com/package/infer-version",
     "languages": [
       "TypeScript"
