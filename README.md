@@ -18,6 +18,17 @@ Infer a project's version from its configuration files.
 npm i infer-version
 ```
 
+## Usage
+
+```ts
+import { version } from "infer-version";
+
+version(".")
+
+// Example output: "1.0.0"
+// If there are no configuration files: null
+```
+
 ## Tests
 
 To run tests:

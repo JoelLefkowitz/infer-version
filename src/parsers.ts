@@ -1,9 +1,6 @@
 import fs from "fs";
 import path from "path";
 
-export const strip = (arr: string[], str: string): string | null =>
-  arr.reduce((acc, x) => acc.replaceAll(x, ""), str);
-
 export const read = (path: string): string | null => {
   if (fs.existsSync(path)) {
     return fs.readFileSync(path, "utf8");
@@ -12,13 +9,25 @@ export const read = (path: string): string | null => {
   return null;
 };
 
+export const escapeRegex = (str: string): string =>
+  str.replace(/[|\\{}()[\]^$+*?.]/gu, "\\$&");
+
+export const replaceAll = (
+  str: string,
+  pattern: string,
+  replace: string
+): string => str.replace(new RegExp(escapeRegex(pattern), "gu"), replace);
+
 export const selectLine = (
   path: string,
   regex: RegExp,
   filler: string[]
 ): string | null => {
   const matches = read(path)?.match(regex);
-  return matches?.[0] ? strip(filler, matches[0]) : null;
+
+  return matches?.[0]
+    ? filler.reduce((acc, x) => replaceAll(acc, x, ""), matches[0])
+    : null;
 };
 
 export const bumpversion = (root: string): string | null =>
