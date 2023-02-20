@@ -23,7 +23,7 @@ npm i infer-version
 ```ts
 import { version } from "infer-version";
 
-version(".")
+version(".");
 
 // Example output: "1.0.0"
 // If there are no configuration files: null
