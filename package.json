@@ -1,7 +1,7 @@
 {
   "name": "infer-version",
   "description": "Infer a project's version from its configuration files.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "repository": "https://github.com/joellefkowitz/infer-version",
   "homepage": "https://infer-version.readthedocs.io",
   "author": "Joel Lefkowitz",
