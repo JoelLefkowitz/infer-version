@@ -3,7 +3,7 @@ import { bumpversion, packageJSON, spago } from "./parsers";
 export const version = (root: string): string => {
   const parsed = [bumpversion, spago, packageJSON].reduce(
     (acc: string | null, f: (x: string) => string | null) => acc ?? f(root),
-    null
+    null,
   );
 
   if (parsed) {

@@ -2,50 +2,56 @@
   "name": "infer-version",
   "description": "Infer a project's version from its configuration files.",
   "version": "0.3.0",
-  "repository": "https://github.com/joellefkowitz/infer-version",
-  "homepage": "https://infer-version.readthedocs.io",
-  "author": "Joel Lefkowitz",
+  "private": false,
   "license": "MIT",
+  "author": "Joel Lefkowitz",
+  "repository": "https://github.com/joellefkowitz/infer-version",
+  "homepage": "https://joellefkowitz.github.io/infer-version",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "scripts": {
-    "prepare": "husky install"
-  },
-  "dependencies": {
-    "string.prototype.replaceall": "^1.0.6"
-  },
-  "devDependencies": {
-    "@types/jest": "28.1.1",
-    "@types/node": "^18.11.18",
-    "@typescript-eslint/eslint-plugin": "^5.52.0",
-    "@typescript-eslint/parser": "^5.36.1",
-    "cspell": "^6.26.3",
-    "eslint-config-prettier": "8.1.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint": "~8.34.0",
-    "husky": "^8.0.3",
-    "jest": "28.1.1",
-    "nps-utils": "^1.7.0",
-    "nps": "^5.10.0",
-    "prettier": "^2.6.2",
-    "ts-jest": "28.0.5",
-    "ts-node": "10.9.1",
-    "tslib": "^2.3.0",
-    "typescript": "^4.8.4"
-  },
+  "keywords": [
+    "infer",
+    "version",
+    "configuration"
+  ],
   "metadata": {
-    "documentation": "https://infer-version.readthedocs.io",
-    "packages": "https://npmjs.com/package/infer-version",
+    "publisher": "npm",
     "languages": [
       "TypeScript"
     ],
     "frameworks": [],
     "paradigms": [
-      "Object oriented"
+      "Functional"
     ],
-    "lifecycle": "Alpha",
-    "publisher": "npm"
+    "lifecycle": "Stable"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "lint": "cspell . --dot && eslint . --fix && tsc --noEmit",
+    "format": "prettier . --write",
+    "build": "tsc",
+    "test": "jest",
+    "docs": "typedoc"
+  },
+  "devDependencies": {
+    "@types/jest": "29.0.0",
+    "@types/node": "^18.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "cspell": "^8.0.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "husky": "^9.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.3.0",
+    "typedoc": "^0.25.7",
+    "typedoc-material-theme": "^1.0.2",
+    "typescript": "^5.3.0"
   }
 }

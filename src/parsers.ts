@@ -15,13 +15,13 @@ export const escapeRegex = (str: string): string =>
 export const replaceAll = (
   str: string,
   pattern: string,
-  replace: string
+  replace: string,
 ): string => str.replace(new RegExp(escapeRegex(pattern), "gu"), replace);
 
 export const selectLine = (
   path: string,
   regex: RegExp,
-  filler: string[]
+  filler: string[],
 ): string | null => {
   const matches = read(path)?.match(regex);
 

@@ -2,8 +2,7 @@ import { bumpversion, packageJSON, spago } from "./parsers";
 
 import path from "path";
 
-const sample = (folder: string) =>
-  path.join(__dirname, "..", "samples", folder);
+const sample = (folder: string) => path.join(__dirname, "../test", folder);
 
 const valid = sample("valid");
 const missing = sample("missing");
