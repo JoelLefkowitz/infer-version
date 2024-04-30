@@ -5,6 +5,7 @@ Infer a project's version from its configuration files.
 ![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/infer-version/review.yml)
 ![Version](https://img.shields.io/npm/v/infer-version)
 ![Downloads](https://img.shields.io/npm/dw/infer-version)
+![Size](https://img.shields.io/bundlephobia/min/infer-version)
 ![Quality](https://img.shields.io/codacy/grade/cb2202d9612c4d5580024f4786a53723)
 ![Coverage](https://img.shields.io/codacy/coverage/cb2202d9612c4d5580024f4786a53723)
 
@@ -30,6 +31,14 @@ version(".");
 ```
 
 ## Tooling
+
+### Dependencies
+
+To install dependencies:
+
+```bash
+yarn install
+```
 
 ### Tests
 
@@ -83,8 +92,8 @@ bump2version patch
 
 Lots of love to the open source community!
 
-<p align='center'>
+<div align='center'>
     <img width=200 height=200 src='https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif' alt='Be kind to your mind' />
     <img width=200 height=200 src='https://media.giphy.com/media/KEAAbQ5clGWJwuJuZB/giphy.gif' alt='Love each other' />
     <img width=200 height=200 src='https://media.giphy.com/media/WRWykrFkxJA6JJuTvc/giphy.gif' alt="It's ok to have a bad day" />
-</p>
+</div>
