@@ -1,7 +1,7 @@
 {
   "name": "infer-version",
   "description": "Infer a project's version from its configuration files.",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "license": "MIT",
   "author": "Joel Lefkowitz",
   "repository": "https://github.com/joellefkowitz/infer-version",
