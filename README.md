@@ -2,7 +2,7 @@
 
 Infer a project's version from its configuration files.
 
-![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/infer-version/review.yml)
+![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/infer-version/review.yaml)
 ![Version](https://img.shields.io/npm/v/infer-version)
 ![Downloads](https://img.shields.io/npm/dw/infer-version)
 ![Size](https://img.shields.io/bundlephobia/min/infer-version)
